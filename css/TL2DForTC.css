@@ -1,0 +1,334 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #2C3639;
+    color: #DCD7C9;
+    font-size: 87.5%;
+    line-height: 1.5;
+}
+
+a {
+    color: aqua;
+}
+
+.P-ul {
+    padding: 20px;
+}
+
+.P-ul li {
+    border: 1px solid #256D85;
+    padding: 15px;
+    background-color: #256D85;
+    border-radius: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+.P-ul li .typecho-label {
+    display: block;
+    border-left: 3px solid #2B4865;
+    line-height: 40px;
+    background: #6aa2a7;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    color: #ffffff;
+    user-select: none;
+}
+
+.P-ul-text li input,
+.P-ul-text li textarea {
+    background: #789395;
+    width: 100%;
+}
+
+.P-ul-text li textarea {
+    height: 15em;
+}
+
+.P-ul-radio li span {
+    display: block;
+}
+
+.P-ul-radio li span input,
+.P-ul-radio li span label {
+    display: inline;
+}
+
+.dn {
+    display: none;
+}
+
+/*---------------------------------------树目录--------------------------------*/
+
+
+.tree {
+
+    margin-top: 40px;
+
+    padding-left: 10px;
+    /*本来默认是40px*/
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+
+}
+
+.tree-a {
+
+    color: #4C4C4C;
+
+    text-decoration: none;
+
+    /*去掉a标签的特性 a标签默认字体蓝色 下面带一个横线 */
+
+}
+
+.tree-li a {
+
+    background: url(ico/json-full.png) no-repeat;
+
+    /*给普通文件设置图标*/
+    /*图片全部使用base64*/
+
+    padding-left: 20px;
+
+}
+
+.tree-li {
+
+    list-style: none;
+
+    position: relative;
+    /* 和input配合*/
+
+}
+
+.tree-li .tree-input {
+
+    opacity: 0;
+    /*为了让checkbox消失*/
+
+    cursor: pointer;
+    /*小手*/
+
+    position: absolute;
+    /*为了让label可以设置成块级元素 因为label需要进行图标和文字的偏离*/
+
+}
+
+.tree-input {
+    opacity: 0;
+}
+
+.tree-label {
+
+    display: block;
+
+    padding-left: 20px;
+    /*让文字和图标分离*/
+
+    margin-left: 20px;
+    /*因为压在加号图标上 需要 整体向右移动 */
+
+    background: url(ico/folder.png) no-repeat;
+    /* 文件夹图标*/
+
+    cursor: pointer;
+
+}
+
+.tree ol {
+
+    background: url(ico/add.png) no-repeat;
+    /*在ol上设置加号图标*/
+
+    background-size: 16px 16px;
+
+    /*border: 1px solid;*/
+
+    /*position: relative;
+    
+    top: -20px;
+    
+    padding-top: 20px ;*/
+
+    margin-top: -20px;
+    /*现在想把加号图标移动到checked选框上 向上移动*/
+
+    padding-top: 20px;
+
+}
+
+.tree ol>li {
+    display: none;
+}
+
+/*将全部子文件隐藏*/
+
+input:checked~ol>li {
+
+    display: block;
+    /*兄弟选择器 当check被选中时 将它下面消失的元素出来*/
+
+}
+
+input:checked~ol {
+
+    background: url(ico/minus.png) no-repeat;
+    /*兄弟选择器 当check被选中时 将ol的图标变成减号*/
+
+    background-size: 16px 16px;
+
+}
+
+
+/*-------------------------------------------------*/
+
+
+.tree-box {
+    background-color: #256D85;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+}
+
+/*------------*/
+/*魔改页面布局*/
+.col-mb-12.col-tb-8.col-tb-offset-2 {
+    margin-left: 0;
+    width: 100%;
+}
+
+/*--------------*/
+
+
+
+.P-navigation-bar {
+    position: sticky;
+    background-color: #256D85;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    width: unset;
+    top: 15px;
+}
+
+.P-navigation-bar .P-tab {
+    text-align: center;
+    left: 0;
+    padding: 0;
+}
+
+.P-tab li {
+    border-radius: 15px;
+    margin: 10px;
+    background-color: #6aa2a7;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ffffff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.P-tab li:hover {
+    background-color: #00a9a9;
+
+}
+
+
+.P-navigation-bar .btn {
+    display: block;
+    background-color: rgb(66, 255, 123);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.P-navigation-bar .btn:hover {
+    background-color: rgb(60, 200, 100);
+}
+
+.P-tab .active {
+    background-color: #02555c;
+}
+
+.btn:disabled,
+#ui-datepicker-div .ui-datepicker-current:disabled,
+#ui-datepicker-div .ui-datepicker-close:disabled {
+    color: #f00 !important;
+}
+
+.from-sub {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    background-color: #2C3639;
+}
+
+.PL-info {
+    text-align: center;
+    margin: 1em 0;
+    background-color: #256D85;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.PL-info>* {
+    margin: 0 0 1rem
+}
+
+.buttons a {
+    background: #467b96;
+    color: #fff;
+    border-radius: 4px;
+    padding: .5em .75em;
+    display: inline-block
+}
+
+.PL-info-text,.PL-info-message{
+    color: #fff;
+    font-size: 1.5em;
+}
+
+form{
+    width: 100%;
+}
+
+.PL-main-content-tree{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){ 
+    .PL_config {
+        display: flex;
+    }
+    .P-navigation-bar {
+        width: 150px;
+    }
+};
