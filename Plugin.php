@@ -42,7 +42,7 @@ class PL2DForTC_Plugin implements Typecho_Plugin_Interface
             echo "<p class='buttons'><a href='https://www.jacksen168.top/index.php/archives/PL2DForTC.html'>项目介绍</a>
                   <a href='https://github.com/jacksen168/PL2DForTC/releases'>更新日志</a></p>";
 
-            $update = file_get_contents("https://www.jacksen168.top/api/update/?name=" . $name . "&current=" . $version . "&site=" . $_SERVER['HTTP_HOST']);
+            $update = file_get_contents("https://www.jacksen168.top/api/update/?name=" . $name . "&current=" . $version . "&website=" . $_SERVER['HTTP_HOST']);
             $update = json_decode($update, true);
 
             if (isset($update['text'])) {
@@ -161,6 +161,38 @@ class PL2DForTC_Plugin implements Typecho_Plugin_Interface
                 unset($models_names, $models_for_get_json_files, $get_josn_files_type, $json_files_after_combined_with_folders, $json_files, $models_folders, $models_folder_files, $models_folder, $i, $L, $f, $j);
             }
         };
+
+        /* //测试
+        function test($path){
+            function get_glob($catalogues){//读取目录模块
+                //目录地址错误纠正(后面加"/")
+                if (substr($catalogues,-1) != '/') {
+                    $catalogues = $catalogues . '/';
+                }
+                $catalogue_length = strlen($catalogues);
+                $get_glob_catalogue = array();
+                foreach (glob($catalogues . "*") as $key => $value) {
+                    $get_glob_catalogue['list'][$key] = substr($value,$catalogue_length);
+                    $get_glob_catalogue['url'][$key] = $value;
+                };
+                return $get_glob_catalogue;
+            }
+
+            $get_glob_catalogue = get_glob($path);
+            $catalogue = array();
+            for ($i=0;$i < count($get_glob_catalogue['list']); $i++) {
+                $catalogue['folder'][$i] = $get_glob_catalogue['list'][$i];//文件夹名字
+                $files = get_glob($get_glob_catalogue['url'][$i]);
+                $catalogue['files_url'][$i] = glob($get_glob_catalogue['url'][$i] . '/*');
+                $catalogue['files_name'][$i] = $files['list'];
+            }
+            // print_r($catalogue);
+
+        }
+
+        test('../usr/plugins/PL2DForTC/models/');
+
+        */
 
         // print_r(get_json_files(1));
         // print_r(get_json_files(type));
