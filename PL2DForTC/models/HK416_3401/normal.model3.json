@@ -1,0 +1,500 @@
+{
+  "Version": 3,
+  "Type": 0,
+  "FileReferences": {
+    "Moc": "normal.moc3",
+    "Textures": [
+      "textures/texture_00.png"
+    ],
+    "Physics": "normal.physics3.json",
+    "PhysicsV2": {
+      "File": "normal.physics3.json"
+    },
+    "Motions": {
+      "Idle": [
+        {
+          "File": "motions/daiji_idle_01.motion3.json",
+          "Ignorable": true,
+          "Interruptable": true
+        }
+      ],
+      "Tap": [
+        {
+          "File": "motions/login.motion3.json",
+          "Sound": "voice/HK416_0_HELLO_JP.wav"
+        },
+        {
+          "File": "motions/touch_1.motion3.json",
+          "Sound": "voice/HK416_0_DIALOGUE1_JP.wav"
+        },
+        {
+          "File": "motions/wait_1.motion3.json",
+          "Sound": "voice/HK416_0_DIALOGUE1_JP.wav"
+        },
+        {
+          "File": "motions/wedding.motion3.json",
+          "Sound": "voice/HK416_0_SOULCONTRACT_JP.wav"
+        },
+        {
+          "File": "motions/wedding_touch.motion3.json",
+          "Sound": "voice/HK416_0_DIALOGUEWEDDING_JP.wav"
+        }
+      ]
+    }
+  },
+  "Controllers": {
+    "ParamHit": {},
+    "ParamLoop": {},
+    "KeyTrigger": {},
+    "ParamTrigger": {},
+    "AreaTrigger": {},
+    "HandTrigger": {},
+    "EyeBlink": {
+      "MinInterval": 500,
+      "MaxInterval": 6000,
+      "Items": [
+        {
+          "Id": "ParamEyeROpen",
+          "Min": 0.0,
+          "Max": 1.0,
+          "BlendMode": 2,
+          "Input": 0
+        },
+        {
+          "Id": "ParamEyeLOpen",
+          "Min": 0.0,
+          "Max": 1.0,
+          "BlendMode": 2,
+          "Input": 0
+        }
+      ],
+      "Enabled": true
+    },
+    "LipSync": {
+      "Gain": 5.0,
+      "Items": [
+        {
+          "Id": "ParamMouthOpenY",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Input": 0
+        }
+      ],
+      "Enabled": true
+    },
+    "MouseTracking": {
+      "SmoothTime": 0.15,
+      "Enabled": true
+    },
+    "AutoBreath": {
+      "Enabled": true
+    },
+    "ExtraMotion": {
+      "Enabled": true
+    },
+    "Accelerometer": {
+      "Enabled": true
+    },
+    "Microphone": {},
+    "Transform": {},
+    "FaceTracking": {
+      "Enabled": true
+    },
+    "HandTracking": {},
+    "ParamValue": {},
+    "PartOpacity": {},
+    "ArtmeshOpacity": {},
+    "ArtmeshColor": {},
+    "ArtmeshCulling": {
+      "DefaultMode": 0
+    },
+    "IntimacySystem": {}
+  },
+  "HitAreas": [
+    {
+      "Name": "HitAreaLeg",
+      "Id": "HitAreaLeg"
+    },
+    {
+      "Name": "HitAreaBody",
+      "Id": "HitAreaBody"
+    },
+    {
+      "Name": "HitAreaHead",
+      "Id": "HitAreaHead"
+    },
+    {
+      "Name": "D_PSD_17",
+      "Id": "D_PSD_17"
+    },
+    {
+      "Name": "D_PSD_16",
+      "Id": "D_PSD_16"
+    },
+    {
+      "Name": "D_PSD_15",
+      "Id": "D_PSD_15"
+    },
+    {
+      "Name": "D_PSD_14",
+      "Id": "D_PSD_14"
+    },
+    {
+      "Name": "D_PSD_13",
+      "Id": "D_PSD_13"
+    },
+    {
+      "Name": "D_PSD_12",
+      "Id": "D_PSD_12"
+    },
+    {
+      "Name": "D_PSD_33",
+      "Id": "D_PSD_33"
+    },
+    {
+      "Name": "D_PSD_32",
+      "Id": "D_PSD_32"
+    },
+    {
+      "Name": "D_PSD_27",
+      "Id": "D_PSD_27"
+    },
+    {
+      "Name": "D_PSD_19",
+      "Id": "D_PSD_19"
+    },
+    {
+      "Name": "D_PSD_11",
+      "Id": "D_PSD_11"
+    },
+    {
+      "Name": "D_PSD_35",
+      "Id": "D_PSD_35"
+    },
+    {
+      "Name": "D_PSD_34",
+      "Id": "D_PSD_34"
+    },
+    {
+      "Name": "D_PSD_30",
+      "Id": "D_PSD_30"
+    },
+    {
+      "Name": "D_PSD_26",
+      "Id": "D_PSD_26"
+    },
+    {
+      "Name": "D_PSD_25",
+      "Id": "D_PSD_25"
+    },
+    {
+      "Name": "D_PSD_28",
+      "Id": "D_PSD_28"
+    },
+    {
+      "Name": "D_PSD_29",
+      "Id": "D_PSD_29"
+    },
+    {
+      "Name": "D_PSD_24",
+      "Id": "D_PSD_24"
+    },
+    {
+      "Name": "D_PSD_23",
+      "Id": "D_PSD_23"
+    },
+    {
+      "Name": "D_PSD_10",
+      "Id": "D_PSD_10"
+    },
+    {
+      "Name": "D_PSD_09",
+      "Id": "D_PSD_09"
+    },
+    {
+      "Name": "D_PSD_91",
+      "Id": "D_PSD_91"
+    },
+    {
+      "Name": "D_PSD_90",
+      "Id": "D_PSD_90"
+    },
+    {
+      "Name": "D_PSD_89",
+      "Id": "D_PSD_89"
+    },
+    {
+      "Name": "D_PSD_88",
+      "Id": "D_PSD_88"
+    },
+    {
+      "Name": "D_PSD_87",
+      "Id": "D_PSD_87"
+    },
+    {
+      "Name": "D_PSD_86",
+      "Id": "D_PSD_86"
+    },
+    {
+      "Name": "D_PSD_85",
+      "Id": "D_PSD_85"
+    },
+    {
+      "Name": "D_PSD_80",
+      "Id": "D_PSD_80"
+    },
+    {
+      "Name": "D_PSD_79",
+      "Id": "D_PSD_79"
+    },
+    {
+      "Name": "D_PSD_78",
+      "Id": "D_PSD_78"
+    },
+    {
+      "Name": "D_PSD_77",
+      "Id": "D_PSD_77"
+    },
+    {
+      "Name": "D_PSD_84",
+      "Id": "D_PSD_84"
+    },
+    {
+      "Name": "D_PSD_83",
+      "Id": "D_PSD_83"
+    },
+    {
+      "Name": "D_PSD_82",
+      "Id": "D_PSD_82"
+    },
+    {
+      "Name": "D_PSD_81",
+      "Id": "D_PSD_81"
+    },
+    {
+      "Name": "D_PSD_76",
+      "Id": "D_PSD_76"
+    },
+    {
+      "Name": "D_PSD_75",
+      "Id": "D_PSD_75"
+    },
+    {
+      "Name": "D_PSD_74",
+      "Id": "D_PSD_74"
+    },
+    {
+      "Name": "D_PSD_22",
+      "Id": "D_PSD_22"
+    },
+    {
+      "Name": "D_PSD_18",
+      "Id": "D_PSD_18"
+    },
+    {
+      "Name": "D_PSD_31",
+      "Id": "D_PSD_31"
+    },
+    {
+      "Name": "D_PSD_08",
+      "Id": "D_PSD_08"
+    },
+    {
+      "Name": "D_PSD_07",
+      "Id": "D_PSD_07"
+    },
+    {
+      "Name": "D_PSD_01",
+      "Id": "D_PSD_01"
+    },
+    {
+      "Name": "D_PSD_00",
+      "Id": "D_PSD_00"
+    },
+    {
+      "Name": "D_PSD_06",
+      "Id": "D_PSD_06"
+    },
+    {
+      "Name": "D_PSD_04",
+      "Id": "D_PSD_04"
+    },
+    {
+      "Name": "D_PSD_05",
+      "Id": "D_PSD_05"
+    },
+    {
+      "Name": "D_PSD_02",
+      "Id": "D_PSD_02"
+    },
+    {
+      "Name": "D_PSD_71",
+      "Id": "D_PSD_71"
+    },
+    {
+      "Name": "D_PSD_70",
+      "Id": "D_PSD_70"
+    },
+    {
+      "Name": "D_PSD_68",
+      "Id": "D_PSD_68"
+    },
+    {
+      "Name": "D_PSD_65",
+      "Id": "D_PSD_65"
+    },
+    {
+      "Name": "D_PSD_93",
+      "Id": "D_PSD_93"
+    },
+    {
+      "Name": "D_PSD_92",
+      "Id": "D_PSD_92"
+    },
+    {
+      "Name": "D_PSD_73",
+      "Id": "D_PSD_73"
+    },
+    {
+      "Name": "D_PSD_72",
+      "Id": "D_PSD_72"
+    },
+    {
+      "Name": "D_PSD_69",
+      "Id": "D_PSD_69"
+    },
+    {
+      "Name": "D_PSD_67",
+      "Id": "D_PSD_67"
+    },
+    {
+      "Name": "D_PSD_94",
+      "Id": "D_PSD_94"
+    },
+    {
+      "Name": "D_PSD_36",
+      "Id": "D_PSD_36"
+    },
+    {
+      "Name": "D_PSD_61",
+      "Id": "D_PSD_61"
+    },
+    {
+      "Name": "D_PSD_60",
+      "Id": "D_PSD_60"
+    },
+    {
+      "Name": "D_PSD_59",
+      "Id": "D_PSD_59"
+    },
+    {
+      "Name": "D_PSD_58",
+      "Id": "D_PSD_58"
+    },
+    {
+      "Name": "D_PSD_57",
+      "Id": "D_PSD_57"
+    },
+    {
+      "Name": "D_PSD_56",
+      "Id": "D_PSD_56"
+    },
+    {
+      "Name": "D_PSD_41",
+      "Id": "D_PSD_41"
+    },
+    {
+      "Name": "D_PSD_40",
+      "Id": "D_PSD_40"
+    },
+    {
+      "Name": "D_PSD_66",
+      "Id": "D_PSD_66"
+    },
+    {
+      "Name": "D_PSD_55",
+      "Id": "D_PSD_55"
+    },
+    {
+      "Name": "D_PSD_54",
+      "Id": "D_PSD_54"
+    },
+    {
+      "Name": "D_PSD_53",
+      "Id": "D_PSD_53"
+    },
+    {
+      "Name": "D_PSD_52",
+      "Id": "D_PSD_52"
+    },
+    {
+      "Name": "D_PSD_51",
+      "Id": "D_PSD_51"
+    },
+    {
+      "Name": "D_PSD_50",
+      "Id": "D_PSD_50"
+    },
+    {
+      "Name": "D_PSD_49",
+      "Id": "D_PSD_49"
+    },
+    {
+      "Name": "D_PSD_48",
+      "Id": "D_PSD_48"
+    },
+    {
+      "Name": "D_PSD_47",
+      "Id": "D_PSD_47"
+    },
+    {
+      "Name": "D_PSD_46",
+      "Id": "D_PSD_46"
+    },
+    {
+      "Name": "D_PSD_45",
+      "Id": "D_PSD_45"
+    },
+    {
+      "Name": "D_PSD_44",
+      "Id": "D_PSD_44"
+    },
+    {
+      "Name": "D_PSD_43",
+      "Id": "D_PSD_43"
+    },
+    {
+      "Name": "D_PSD_42",
+      "Id": "D_PSD_42"
+    },
+    {
+      "Name": "D_PSD_39",
+      "Id": "D_PSD_39"
+    },
+    {
+      "Name": "D_PSD_38",
+      "Id": "D_PSD_38"
+    },
+    {
+      "Name": "D_PSD_37",
+      "Id": "D_PSD_37"
+    },
+    {
+      "Name": "D_PSD_64",
+      "Id": "D_PSD_64"
+    },
+    {
+      "Name": "D_PSD_63",
+      "Id": "D_PSD_63"
+    },
+    {
+      "Name": "D_PSD_62",
+      "Id": "D_PSD_62"
+    },
+    {
+      "Name": "D_PSD_03",
+      "Id": "D_PSD_03"
+    }
+  ],
+  "Options": {}
+}

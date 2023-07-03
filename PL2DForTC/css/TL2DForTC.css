@@ -1,0 +1,449 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #2C3639;
+    color: #DCD7C9;
+    font-size: 87.5%;
+    line-height: 1.5;
+}
+
+a {
+    color: aqua;
+}
+
+.P-ul {
+    padding: 20px;
+}
+
+.P-ul li {
+    border: 1px solid #256D85;
+    padding: 15px;
+    background-color: #256D85;
+    border-radius: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+.P-ul li .typecho-label {
+    display: block;
+    border-left: 3px solid #2B4865;
+    line-height: 40px;
+    background: #6aa2a7;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    color: #ffffff;
+    user-select: none;
+}
+
+.P-ul-text li input,
+.P-ul-text li textarea {
+    background: #789395;
+    width: 100%;
+}
+
+.P-ul-text li textarea {
+    height: 15em;
+}
+
+.P-ul-radio li span {
+    display: block;
+}
+
+.P-ul-radio li span input,
+.P-ul-radio li span label {
+    display: inline;
+}
+
+.dn {
+    display: none;
+}
+
+/*---------------图标--------------------*/
+
+@font-face {
+    font-family: "iconfont";
+    /* Project id 4133935 */
+    src: url('iconfont.woff2?t=1687356350467') format('woff2'),
+        url('iconfont.woff?t=1687356350467') format('woff'),
+        url('iconfont.ttf?t=1687356350467') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon:before {
+    margin-right: 0.5rem;
+}
+
+.icon-folder-full:before {
+    color: #00deff;
+    content: "\ea29";
+}
+
+.icon-folder:before {
+    color: #00deff;
+    content: "\ea2a";
+}
+
+.icon-folder-open-full:before {
+    color: #00deff;
+    content: "\ea2b";
+}
+
+.icon-folder-open:before {
+    color: #00deff;
+    content: "\ea2c";
+}
+
+.icon-file:before {
+    color: #00deff;
+    content: "\ea2e";
+}
+
+.icon-file-full:before {
+    color: #00deff;
+    content: "\ea2f";
+}
+
+.icon-image:before {
+    color: #00deff;
+    content: "\ea40";
+}
+
+.icon-image-full:before {
+    color: #00deff;
+    content: "\ea41";
+}
+
+.icon-json-full:before {
+    color: #00deff;
+    content: "\ea42";
+}
+
+.icon-json:before {
+    color: #00deff;
+    content: "\ea43";
+}
+
+.icon-audio-full:before {
+    color: #00deff;
+    content: "\ea48";
+}
+
+.icon-audio:before {
+    color: #00deff;
+    content: "\ea49";
+}
+
+.icon-avi-full:before {
+    color: #00deff;
+    content: "\ea4a";
+}
+
+.icon-avi:before {
+    color: #00deff;
+    content: "\ea4b";
+}
+
+.icon-zip-full:before {
+    color: #00deff;
+    content: "\ea4c";
+}
+
+.icon-zip:before {
+    color: #00deff;
+    content: "\ea4d";
+}
+
+.icon-checkbox-minus:before {
+    color: #00deff;
+    content: "\ea6d";
+}
+
+.icon-checkbox-minus-full:before {
+    color: #00deff;
+    content: "\ea6e";
+}
+
+.icon-checkbox-plus-full:before {
+    color: #00deff;
+    content: "\ea6f";
+}
+
+.icon-checkbox-plus:before {
+    color: #00deff;
+    content: "\ea70";
+}
+
+/*---------------------------------------树目录--------------------------------*/
+
+.tree ul {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.tree li {
+    white-space: nowrap;
+    margin-top: 0.5rem;
+}
+
+.tree li label {
+    cursor: pointer;
+}
+
+.tree li.folder>ul {
+    display: none;
+}
+
+.tree li.folder.open>ul {
+    display: block;
+}
+
+.tree li.folder>label:before {
+    content: "\ea6f";
+    display: inline-block;
+    width: 1rem;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+.tree li.folder.open>label:before {
+    content: "\ea6e";
+}
+
+.tree li.folder::before {
+    content: "\ea29";
+}
+
+.tree li.folder.open::before {
+    content: "\ea2b";
+}
+
+.tree li ul {
+    margin-left: 1rem;
+}
+
+.tree li input[type="checkbox"] {
+    display: none;
+}
+
+.tree li.folder>input[type="checkbox"]:checked~ul {
+    display: block;
+}
+
+/* li.file {
+    margin-left: 2rem;
+} */
+
+.tree li.file>a {
+    cursor: pointer;
+    color: #00deff;
+}
+
+.tree li.file>a:hover {
+    text-decoration: underline;
+}
+
+/*-------------------------------------------------*/
+
+
+.tree-box {
+    background-color: #256D85;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+}
+
+/*------------*/
+/*魔改页面布局*/
+.col-mb-12.col-tb-8.col-tb-offset-2 {
+    margin-left: 0;
+    width: 100%;
+}
+
+/*--------------*/
+
+
+
+.P-navigation-bar {
+    position: sticky;
+    background-color: #256D85;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    width: unset;
+    top: 15px;
+}
+
+.P-navigation-bar .P-tab {
+    text-align: center;
+    left: 0;
+    padding: 0;
+}
+
+.P-tab li {
+    border-radius: 15px;
+    margin: 10px;
+    background-color: #6aa2a7;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ffffff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.P-tab li:hover {
+    background-color: #00a9a9;
+
+}
+
+
+.P-navigation-bar .btn {
+    display: block;
+    background-color: rgb(66, 255, 123);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.P-navigation-bar .btn:hover {
+    background-color: rgb(60, 200, 100);
+}
+
+.P-tab .active {
+    background-color: #02555c;
+}
+
+.btn:disabled,
+#ui-datepicker-div .ui-datepicker-current:disabled,
+#ui-datepicker-div .ui-datepicker-close:disabled {
+    color: #f00 !important;
+}
+
+.from-sub {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    background-color: #2C3639;
+}
+
+.PL-info {
+    text-align: center;
+    margin: 1em 0;
+    background-color: #256D85;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.PL-info>* {
+    margin: 0 0 1rem
+}
+
+.buttons a {
+    background: #467b96;
+    color: #fff;
+    border-radius: 4px;
+    padding: .5em .75em;
+    display: inline-block
+}
+
+.PL-info-text,
+.PL-info-message {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+form {
+    width: 100%;
+}
+
+.PL-main-content-tree {
+    width: 100%;
+}
+
+
+/*--------------------------- tab and button --------------------------*/
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.tab-content {
+    display: flex;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #6aa2a7;
+}
+
+.tab.active {
+    background-color: #6aa2a7;
+}
+
+.tab-main-content {
+    display: none;
+    padding: 10px;
+}
+
+.tab-main-content.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.choose-tab-button {
+    text-align: center;
+    /* border: 1px solid #000000; */
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    cursor: pointer;
+    background-color: #6aa2a7;
+    color: #ffffff;
+}
+
+.choose-tab-button:hover {
+    background-color: #00a9a9;
+    color: #ffffff;
+}
+
+.choose-tab-button.active {
+    background-color: #02555c;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .PL_config {
+        display: flex;
+    }
+
+    .P-navigation-bar {
+        width: 150px;
+    }
+}
