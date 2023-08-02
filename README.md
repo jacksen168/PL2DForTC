@@ -36,7 +36,7 @@
 ## 开发缘由
 
 当初[奇趣保罗](https://github.com/Dreamer-Paul) 的插件 [pio](https://github.com/Dreamer-Paul/Pio) 并不支持第三代 Live2D 模型,联系了保罗。
-保罗似乎对兼容v3模型并没有打算,另外一个人开发的对Typecho live2d v3模型 看板娘的适配并不友好。便开发这款插件。
+保罗似乎对兼容v3模型并没有打算,另外一个人开发的对Typecho live2d v3模型 看板娘的适配并不友好,便开发这款插件。
 
 ## 开源协议
 
