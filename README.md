@@ -40,7 +40,7 @@
 
 ## 开源协议
 
-本项目采用 MIT 开源协议进行授权。
+本项目采用 [MIT](https://opensource.org/license/mit/) 开源协议进行授权。
 
 ## 感谢
 
