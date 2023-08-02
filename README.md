@@ -2,7 +2,7 @@
 
 全名 PIXI Live2D display for typecho
 
-当前最新版本: V0.6
+当前最新版本: V0.6.1
 
 一个支持更换全部Live2D模型版本的 Typecho 看板娘插件。
 

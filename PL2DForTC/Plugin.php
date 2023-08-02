@@ -10,13 +10,13 @@
  *
  * @package PL2DForTC
  * @author jacksen168
- * @version 0.6
+ * @version 0.6.1
  * @link https://www.jacksen168.top/
  */
 
 global $package, $version;
 $package = 'PL2DForTC';
-$version = '0.6';
+$version = '0.6.1';
 
 class PL2DForTC_Plugin implements Typecho_Plugin_Interface
 {
@@ -86,6 +86,7 @@ class PL2DForTC_Plugin implements Typecho_Plugin_Interface
             $plugins_url = Helper::options()->pluginUrl;
             echo '<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>';
             echo '<script src="' . $plugins_url . '/PL2DForTC/js/PL2DForTC.js"></script>';
+            echo '<script src="' . $plugins_url . '/PL2DForTC/js/PL2DForTC.log.js"></script>';
             echo '<link href="' . $plugins_url . '/PL2DForTC/css/TL2DForTC.css" rel="stylesheet">';
             echo '<script> let plugins_url = "' . $plugins_url . '";</script>';
             echo '<script>var project = { "name":"' . $package . '","version":"' . $version . '" };print_log(project);</script>';
@@ -483,7 +484,7 @@ class PL2DForTC_Plugin implements Typecho_Plugin_Interface
         echo "<script src='" . $ppd . "/PL2DForTC/js/live2d.min.js'></script>" . "\n";
         echo "<script src='" . $ppd . "/PL2DForTC/js/pixi.min.js'></script>" . "\n";
         echo "<script src='" . $ppd . "/PL2DForTC/js/guansss.min.js'></script>" . "\n";
-        echo "<script src='" . $ppd . "/PL2DForTC/js/PL2DForTC.js'></script>" . "\n";
+        echo "<script src='" . $ppd . "/PL2DForTC/js/PL2DForTC.log.js'></script>" . "\n";
         echo '<script>var project = { "name":"' . $package . '","version":"' . $version . '" };print_log(project);</script>';
 
         $model_URL = $ppd . '/PL2DForTC/models';
